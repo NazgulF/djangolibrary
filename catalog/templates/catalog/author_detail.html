@@ -13,8 +13,9 @@
           <p><strong><a href="{{ book.get_absolute_url }}">{{ book.title }}</strong></a></p>
           <p>{{ book.summary }}</p>
       {% endfor %}
+    {% else %}
+      <p>The are no books of this author</p>
     {% endif %}
-        <p>The are no books of this author</p>
   </div>
   
 {% endblock %}
